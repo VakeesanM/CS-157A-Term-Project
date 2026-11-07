@@ -32,9 +32,28 @@ if not st.session_state.AccountID:
 
 if st.session_state.AccountID and st.session_state.rights == "Student":
     st.write("Student Has Logged in!")
+    """
+    To Do:
+
+    - Allow Students to see their past enrollments and grades. 
+    - Course search by proffesor, day, classtime and title
+    - Register for Courses(If course capitcy is above 0)
+    - Drop Courses(Only cur semster courses - Spring 2027)
+
+    
+    """
 
 if st.session_state.AccountID and st.session_state.rights == "Admin":
     st.write("Admin Has Logged in!")
+    """
+        To Do:
+    
+        - See all enrollments for all students 
+        - Create and delete sesions of courses
+        - forcefully register or drop student from courses(regardless of capicty)
+        
+        
+        """
 
 
 if st.session_state.AccountID:
