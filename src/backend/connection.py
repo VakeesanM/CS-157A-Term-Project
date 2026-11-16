@@ -1,7 +1,6 @@
-from sqlalchemy import create_engine, text
+from mysql.connector import connect
 from dotenv import load_dotenv
 import os
-
 load_dotenv()
 
 
@@ -11,9 +10,7 @@ IP = os.getenv("MYSQL_IP") # Default should be Localhost.
 DATABASE = os.getenv("MYSQL_DATABASE")
 
 
-
-engine = create_engine(
-    f'mysql+mysqlconnector://{USER}:{PASSWORD}@{IP}/{DATABASE}'
-)
+def create_connection():
+    return connect(host=IP, user=USER, password=PASSWORD, database=DATABASE)
 
 
