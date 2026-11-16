@@ -7,7 +7,11 @@ This is term project for SJSU's CS 157A(Intro to Database Management Courses) do
 
 ```bash
 pip install -r requirements.txt
-type nul > .env
+cp .envcopy .env
+# Fill out the .env file
+del .envcopy
+python sql-set-up/set_up.py
+streamlit run src/main.py
 ```
 ```bash
 # Download and run the files in sql-set-up in mySQL server
