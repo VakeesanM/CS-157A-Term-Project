@@ -13,19 +13,6 @@ del .envcopy
 python sql-set-up/set_up.py
 streamlit run src/main.py
 ```
-```bash
-# Download and run the files in sql-set-up in mySQL server
-# Write Database info in .env in the following format:
-#MYSQL_USER={}
-#MYSQL_PASSWORD=
-#MYSQL_IP=
-#MYSQL_DATABASE=
-
-```
-```bash
-streamlit run src/main.py
-```
-
 ## Fake Accounts
 If you would like to try out our applicaiton, you can login into it with anyone of these fake accounts.
 
