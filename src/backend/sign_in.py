@@ -1,12 +1,11 @@
 from backend.connection import create_connection
-from sqlalchemy import text
 from argon2 import PasswordHasher
 from argon2.exceptions import VerifyMismatchError
 
 hasher = PasswordHasher()
 
 def valid_email(email, conn):
-    query = "Select COUNT(Email) AS Count FROM accounts WHERE Email = %s"
+    query = "Select COUNT(Email) AS Count FROM Accounts WHERE Email = %s"
     
 
     with conn.cursor() as cursor:
@@ -22,7 +21,7 @@ def sign_in(email, password):
         conn.close()
         return None
 
-    query = "Select AccountID, PasswordHash, Role FROM accounts WHERE Email = %s"
+    query = "Select AccountID, PasswordHash, Role FROM Accounts WHERE Email = %s"
     with conn.cursor() as cursor:
         cursor.execute(query, (email,))
         result = cursor.fetchone()
