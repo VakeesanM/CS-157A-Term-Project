@@ -31,6 +31,9 @@ If you would like to try out our applicaiton, you can login into it with anyone 
 | lucas.young@school.edu | Comet!5981 |
 | justin.young@school.edu | somethinghere |
 | preston.smit@school.edu | somethingelsehereinstead |
+| harper.lee@school.edu | Willow#3317 |
+| jacob.nguyen@school.edu | Canyon$7740 |
+| mia.patel@school.edu | Lotus!2259 |
 
 **Admin Accounts**
 | Email | Password |
